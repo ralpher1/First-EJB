@@ -1,0 +1,21 @@
+{
+  "name": "First EJB Sample",
+  "image": "mcr.microsoft.com/devcontainers/java:1-8-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/maven": {
+      "version": "3.9.5"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.home": "/usr/local/sdkman/candidates/java/current"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java"
+      ]
+    }
+  },
+  "postCreateCommand": "mvn -q -e -DskipTests package"
+}
