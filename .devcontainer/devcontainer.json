@@ -1,9 +1,13 @@
 {
   "name": "First EJB Sample",
-  "image": "mcr.microsoft.com/devcontainers/java:1-8-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
   "features": {
+    "ghcr.io/devcontainers/features/java": {
+      "version": "8",
+      "jdkDistro": "tem"
+    },
     "ghcr.io/devcontainers/features/maven": {
-      "version": "3.9.5"
+      "version": "3.9.6"
     }
   },
   "customizations": {
@@ -17,5 +21,10 @@
       ]
     }
   },
-  "postCreateCommand": "mvn -q -e -DskipTests package"
+  "postCreateCommand": [
+    "mvn",
+    "-q",
+    "-DskipTests",
+    "package"
+  ]
 }
