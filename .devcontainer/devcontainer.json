@@ -1,6 +1,11 @@
 {
   "name": "First EJB Sample",
   "image": "mcr.microsoft.com/devcontainers/java:1-8-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/maven:1": {
+      "version": "3.9"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
