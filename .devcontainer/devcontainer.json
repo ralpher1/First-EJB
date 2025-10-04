@@ -9,5 +9,5 @@
       ]
     }
   },
-  "postCreateCommand": "mvn -q -DskipTests package"
+  "updateContentCommand": "mvn -q -DskipTests package"
 }
