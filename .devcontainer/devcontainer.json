@@ -16,6 +16,6 @@
       ]
     }
   },
-  "postCreateCommand": "mvn clean package -DskipTests",
-  "onCreateCommand": "java -version && mvn -version"
+  "onCreateCommand": "java -version && mvn -version",
+  "postStartCommand": "mvn clean package -DskipTests"
 }
