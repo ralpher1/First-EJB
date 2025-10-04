@@ -1,13 +1,7 @@
 {
   "name": "First EJB Sample",
-  "image": "mcr.microsoft.com/devcontainers/java:8-jdk-bullseye",
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/maven:1": {
-      "version": "3.9"
-    }
+  "build": {
+    "dockerfile": "Dockerfile"
   },
   "customizations": {
     "vscode": {
@@ -16,6 +10,5 @@
       ]
     }
   },
-  "onCreateCommand": "java -version && mvn -version",
-  "postStartCommand": "mvn clean package -DskipTests"
+  "postCreateCommand": "java -version && mvn -version && mvn clean package -DskipTests"
 }

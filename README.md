@@ -21,7 +21,9 @@ Each step is displayed in the console so you can see the CRUD operations in acti
 
 ## Developing in GitHub Codespaces
 
-This repository includes a `.devcontainer/devcontainer.json` configuration so the sample can be
-opened directly in GitHub Codespaces or VS Code Dev Containers. The container installs Java 8 and
-Maven 3.9 automatically and runs a Maven package build after creation so the project is ready to
-execute the sample command above.
+This repository includes a `.devcontainer/` configuration so the sample can be opened directly in 
+GitHub Codespaces or VS Code Dev Containers. The container uses the official Maven image with 
+Eclipse Temurin OpenJDK 8, providing a clean and reliable development environment. 
+
+After the container is created, it automatically verifies Java and Maven installations and builds 
+the project, so it's ready to execute the sample command above.
